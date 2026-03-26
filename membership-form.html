@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Form - Neahkahnie Social Club</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root {
+      --text: #222;
+      --bg: #fff;
+      --border: #333;
+      --muted: #555;
+      --accent: #1b4965;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e0e0e0;
+        --bg: #121225;
+        --border: #777;
+        --muted: #aaa;
+        --accent: #5ba3c9;
+      }
+    }
+    @media print {
+      :root {
+        --text: #000;
+        --bg: #fff;
+        --border: #000;
+        --muted: #333;
+        --accent: #000;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-bottom: 0.1rem;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.2rem;
+      margin-top: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: var(--accent);
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .form-field { flex: 1; }
+
+    .form-field label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 0.15rem;
+    }
+
+    .form-field .line {
+      border-bottom: 1px solid var(--border);
+      height: 1.4rem;
+    }
+
+    .fee-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .fee-table th, .fee-table td {
+      text-align: left;
+      padding: 0.3rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .fee-table th {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .fee-table .amount { text-align: right; white-space: nowrap; }
+    .fee-table .total-row { font-weight: bold; }
+
+    .fee-table .write-line {
+      border-bottom: 1px solid var(--border);
+      display: inline-block;
+      width: 70px;
+      height: 1rem;
+      vertical-align: bottom;
+    }
+
+    .instructions {
+      margin-top: 1.1rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    .instructions p { margin-bottom: 0.3rem; }
+    .instructions strong { display: block; margin-bottom: 0.3rem; }
+    .address-block { padding-left: 1rem; }
+
+    .back-link {
+      text-align: center;
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .back-link a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .back-link a:hover { text-decoration: underline; }
+
+    @media print {
+      .back-link { display: none; }
+      body { padding: 0.4in 0.5in; }
+    }
+
+    @media (max-width: 500px) {
+      .form-row { flex-direction: column; gap: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Neahkahnie Social Club</h1>
+  <p class="subtitle">Membership &amp; Event Registration Form</p>
+
+  <h2>Member Information</h2>
+
+  <div class="form-row">
+    <div class="form-field">
+      <label>Name(s)</label>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field">
+      <label>Mailing Address</label>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field">
+      <label>City, State, ZIP</label>
+      <div class="line"></div>
+    </div>
+    <div class="form-field">
+      <label>Phone</label>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field">
+      <label>Email</label>
+      <div class="line"></div>
+    </div>
+    <div class="form-field">
+      <label>Neahkahnie Property Address (if different)</label>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <h2>Fees</h2>
+
+  <table class="fee-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Rate</th>
+        <th class="amount">Qty / Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Annual Membership Dues</td>
+        <td>$20 / person</td>
+        <td class="amount"><span class="write-line"></span></td>
+      </tr>
+      <tr>
+        <td>Picnic Guest Fee</td>
+        <td>$15 / guest (kids under 12 free)</td>
+        <td class="amount"><span class="write-line"></span></td>
+      </tr>
+      <tr>
+        <td>Holiday Party</td>
+        <td>$45 / member (members only)</td>
+        <td class="amount"><span class="write-line"></span></td>
+      </tr>
+      <tr class="total-row">
+        <td colspan="2">Total Enclosed</td>
+        <td class="amount">$ <span class="write-line"></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="instructions">
+    <strong>Mail this form with a check payable to:</strong>
+    <p>Neah-Kah-Nie Community Club</p>
+    <div class="address-block">
+      <p>Neahkahnie Social Club</p>
+      <p>PO Box 412</p>
+      <p>Manzanita, OR 97130</p>
+    </div>
+    <p style="margin-top: 0.5rem;">Questions? Email <strong style="display: inline;">neahkahniesocialclub@gmail.com</strong></p>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">&larr; Back to website</a>
+  </div>
+
+</body>
+</html>

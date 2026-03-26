@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neahkahnie Social Club</title>
+  <meta name="description" content="The Neahkahnie Social Club is a social club for property owners and residents of the Neahkahnie area near Manzanita, Oregon. Join us for picnics, holiday parties, and community gatherings.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Neahkahnie Social Club</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.nav-links').classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#officers">Officers</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#bylaws">Bylaws</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Neahkahnie Social Club</h1>
+      <p class="tagline">Bringing together the beach community since 1954</p>
+      <a href="#membership" class="btn">Become a Member</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <h2>About the Club</h2>
+      <p class="section-subtitle">A gathering place for neighbors on the Oregon coast</p>
+      <div class="about-text">
+        <p>The Neahkahnie Social Club has been the heart of our beach community for over 70 years. Founded in 1954, we bring together property owners, residents, and friends of the Neahkahnie area near Manzanita, Oregon, for fellowship and fun throughout the year.</p>
+        <p>We host an annual summer picnic at Neahkahnie Beach, a festive holiday party each December, and gatherings that keep our coastal community connected. Whether you live here year-round or visit when the coast calls, the club is a way to meet your neighbors, share a meal, and be part of something that has endured for generations.</p>
+        <p>The Neahkahnie Social Club is a 501(c)(7) social club, incorporated as the Neah-Kah-Nie Community Club on August 23, 1954. All are welcome to join.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Officers -->
+  <section id="officers" class="section section-alt">
+    <div class="section-inner">
+      <h2>Club Officers</h2>
+      <p class="section-subtitle">Your 2026 board</p>
+      <div class="officers-grid">
+        <div class="officer-card">
+          <p class="role">President</p>
+          <p class="name">Kelley Fox</p>
+        </div>
+        <div class="officer-card">
+          <p class="role">Treasurer</p>
+          <p class="name">Ken David</p>
+        </div>
+        <div class="officer-card">
+          <p class="role">Secretary</p>
+          <p class="name">Esther Freedman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership -->
+  <section id="membership" class="section">
+    <div class="section-inner">
+      <h2>Membership &amp; Events</h2>
+      <p class="section-subtitle">Join the club and come to our gatherings</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Annual Membership</h3>
+          <p class="price">$20 <span class="price-unit">/ person</span></p>
+          <ul class="details">
+            <li>Access to all club events</li>
+            <li>Free admission to the annual picnic</li>
+            <li>Supports community activities</li>
+          </ul>
+          <a href="https://buy.stripe.com/3cI14ncNXg4Ff100Ai83C03" class="btn-primary price-card-btn" target="_blank" rel="noopener">Pay Online</a>
+        </div>
+        <div class="price-card">
+          <h3>Summer Picnic</h3>
+          <p class="price">Free <span class="price-unit">for members</span></p>
+          <ul class="details">
+            <li>Guest fee: $15 / person</li>
+            <li>Kids under 12: free</li>
+          </ul>
+          <a href="https://buy.stripe.com/9B6cN5cNX4lX0663Mu83C01" class="btn-primary price-card-btn" target="_blank" rel="noopener">Pay Guest Fee</a>
+        </div>
+        <div class="price-card">
+          <h3>Holiday Party</h3>
+          <p class="price">$45 <span class="price-unit">/ member</span></p>
+          <ul class="details">
+            <li>Members-only event</li>
+            <li>Festive December gathering</li>
+          </ul>
+          <a href="https://buy.stripe.com/7sY3cv15f19LaKK96O83C02" class="btn-primary price-card-btn" target="_blank" rel="noopener">Pay Online</a>
+        </div>
+      </div>
+      <div class="membership-actions">
+        <a href="membership-form.html" class="btn-outline">Print Mail-In Form (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bylaws -->
+  <section id="bylaws" class="section section-alt">
+    <div class="section-inner">
+      <h2>Bylaws</h2>
+      <div class="bylaws-content">
+        <p>The Neahkahnie Social Club operates under bylaws adopted by the membership. These bylaws govern how the club is organized, how officers are elected, how meetings are conducted, and the rights and responsibilities of members. The current bylaws were most recently updated in 2017.</p>
+        <a href="assets/bylaws-2017.pdf" class="btn-outline" target="_blank" rel="noopener">Download Bylaws (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos -->
+  <section id="photos" class="section">
+    <div class="section-inner">
+      <h2>Club Photos</h2>
+      <p class="section-subtitle">Picnics, holiday parties, and community gatherings through the years</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="photos/IMG_1591.jpg" alt="Sunset reflected on Neahkahnie Beach" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_2857.jpg" alt="Neahkahnie Beach looking toward the mountain" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_3020.jpg" alt="Path through the dunes to the ocean" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_3000.jpg" alt="Dramatic clouds over the beach" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_2109.jpg" alt="Coastal overlook with clouds and ocean" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_2146.jpg" alt="Beach view through the trees" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG-3010.jpg" alt="Dune grass and sand ripples" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_8491.jpg" alt="Northern lights over Neahkahnie" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_2706.jpg" alt="Starry night sky over the coast" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/IMG_2705.jpg" alt="Moonlit beach at night" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2019-01.jpg" alt="Holiday Party 2019" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2019-02.jpg" alt="Holiday Party 2019" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2019-03.jpg" alt="Holiday Party 2019" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2019-04.jpg" alt="Holiday Party 2019" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2019-05.jpg" alt="Holiday Party 2019" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2019-06.jpg" alt="Holiday Party 2019" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/picnic-2016-01.jpg" alt="Summer Picnic 2016" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/picnic-2016-02.jpg" alt="Summer Picnic 2016" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/picnic-2015-01.jpg" alt="Summer Picnic 2015" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/picnic-2015-02.jpg" alt="Summer Picnic 2015" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2015-01.jpg" alt="Holiday Party 2015" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2015-02.jpg" alt="Holiday Party 2015" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/picnic-2013-01.jpg" alt="Summer Picnic 2013" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/picnic-2009-01.jpg" alt="Summer Picnic 2009" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/holiday-2009-01.jpg" alt="Holiday Party 2009" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="photos/historic.jpg" alt="Historic Neahkahnie" loading="lazy">
+        </div>
+      </div>
+      <p class="gallery-caption">Scenes from Neahkahnie Beach and club events through the years</p>
+    </div>
+  </section>
+
+  <!-- Community Links -->
+  <section id="links" class="section section-alt">
+    <div class="section-inner">
+      <h2>Community Links</h2>
+      <p class="section-subtitle">Helpful resources for the Neahkahnie and Manzanita area</p>
+
+      <h3 class="links-heading">Community</h3>
+      <div class="links-grid">
+        <a href="https://www.nkncac.org" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Neahkahnie Community Action Committee</p>
+          <p class="link-desc">Local community advocacy and action</p>
+        </a>
+        <a href="https://evcnb.org" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Emergency Volunteer Corps of Nehalem Bay</p>
+          <p class="link-desc">Neighborhood emergency preparedness and planning</p>
+        </a>
+        <a href="https://hoffmanarts.org" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Hoffman Center for the Arts</p>
+          <p class="link-desc">Arts and culture center in Manzanita</p>
+        </a>
+        <a href="https://www.nehalemtrust.org/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Lower Nehalem Community Land Trust</p>
+          <p class="link-desc">Community land trust and conservation</p>
+        </a>
+        <a href="https://www.northcoastbbq.com/current-listing/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Northcoast BBQ</p>
+          <p class="link-desc">Community bulletin board and local listings</p>
+        </a>
+      </div>
+
+      <h3 class="links-heading">Utilities &amp; Services</h3>
+      <div class="links-grid">
+        <a href="https://www.tpud.org" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Tillamook PUD</p>
+          <p class="link-desc">Electric utility service</p>
+        </a>
+        <a href="https://www.nknwd.org" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Neahkahnie Water District</p>
+          <p class="link-desc">Local water service</p>
+        </a>
+        <a href="https://www.nbwaor.gov" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Nehalem Bay Wastewater</p>
+          <p class="link-desc">Wastewater and sewer service</p>
+        </a>
+        <a href="https://www.recology.com/recology-western-oregon/tillamook/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Recology</p>
+          <p class="link-desc">Garbage and recycling collection</p>
+        </a>
+        <a href="https://www.spectrum.net" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Spectrum</p>
+          <p class="link-desc">Internet and cable service</p>
+        </a>
+      </div>
+
+      <h3 class="links-heading">News &amp; Government</h3>
+      <div class="links-grid">
+        <a href="https://www.manzanitatoday.com" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Manzanita Today</p>
+          <p class="link-desc">Monthly coverage of Manzanita city hall and local governance</p>
+        </a>
+        <a href="https://www.co.tillamook.or.us/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Tillamook County</p>
+          <p class="link-desc">County government and services</p>
+        </a>
+        <a href="https://www.dailyastorian.com/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">The Daily Astorian</p>
+          <p class="link-desc">North coast news and reporting</p>
+        </a>
+        <a href="https://www.tillamookheadlightherald.com/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">Tillamook Headlight Herald</p>
+          <p class="link-desc">Local Tillamook County newspaper</p>
+        </a>
+        <a href="https://northcoastcitizen.com/" class="link-card" target="_blank" rel="noopener">
+          <p class="link-name">North Coast Citizen</p>
+          <p class="link-desc">Community news and events</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2>Contact Us</h2>
+      <p class="section-subtitle">We'd love to hear from you</p>
+      <div class="contact-info">
+        <p>Email us at <a href="mailto:neahkahniesocialclub@gmail.com">neahkahniesocialclub@gmail.com</a></p>
+        <div class="contact-address">
+          <p class="label">Mailing Address</p>
+          <p>Neahkahnie Social Club</p>
+          <p>PO Box 412</p>
+          <p>Manzanita, OR 97130</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Neahkahnie Social Club. All rights reserved.</p>
+    <p>A 501(c)(7) social club, incorporated 1954. Manzanita, Oregon.</p>
+  </footer>
+
+</body>
+</html>
